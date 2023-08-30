@@ -24,7 +24,7 @@ from nltk.corpus import wordnet
 from nltk.stem import PorterStemmer
 from nltk.stem import LancasterStemmer
 from nltk.stem import WordNetLemmatizer
-df = pd.read_csv('C:\\Users\\6200342\\Desktop\\Hackathon\\Shorts.csv')
+df = pd.read_csv('File_Name')
 df2 = pd.DataFrame.copy(df,deep = True)
 first = df2.drop(['Blinding of intervention','Classes'], axis=1)
 for i in range(628):
@@ -99,7 +99,7 @@ y_train = first['Blinding of Outcome assessment']
 clf = MultinomialNB().fit(X_train, y_train)
 
 import pandas as pd
-df11 = pd.read_csv('C:\\Users\\6200342\\Desktop\\Hackathon\\testset.csv')
+df11 = pd.read_csv('File_Name')
 for i in range(397):
     text2 = df11['text'][i]
 #words1 = text1.lower()                      # change to lowercase
